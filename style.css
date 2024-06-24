@@ -52,7 +52,15 @@ footer {
     text-align: center;
     padding: 1em 0;
     width: 100vw;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+footer.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+  
 
 .followUs {
 color: #fff7e2;
@@ -115,4 +123,10 @@ ul{
 
   .navbar li a {
     color:#660000 ; 
+}
+@media (prefers-color-scheme: dark) {
+    footer {
+      background-color: black;
+      color: white;
+    }
 }
